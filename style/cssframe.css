@@ -1,0 +1,17 @@
+@charset "utf-8";.mylogo{height:90px;margin-top:-10px;margin-left:35px;transition:all ease .5s;}
+#menutodo{margin-top:20px;transition:all ease .5s;}
+#navframe{box-shadow:none;height:100px;transition:all ease .5s;}#menudeopcoes{margin-right:30px}
+@media screen and (max-width:1000px){#menudeopcoes{visibility:hidden;}
+}
+.novorbtn{width:240px;border-radius:100px;height:60px;border:solid;background-color:#AB5500;border-color:transparent;color:#fff;font-size:20px;transition:all ease .5s;}.novorbtn:hover{background-color:#fff;border-color:#fff;color:#000543;}
+.novorbtn2{margin-top:10px;margin-left:-15px;width:240px;border-radius:100px;height:60px;border:solid;background-color:#1A1B22;border-color:#fff;color:#fff;font-size:20px;transition:all ease .5s;}.novorbtn2:hover{background-color:#1A1B22;border-color:#1A1B22;color:#fff;}
+.texsectionone{color:#1A1B22;}
+.ta{min-height:400px;}
+.tbe{min-height:350px;padding:80px;}
+.tbd{min-height:350px;}
+.hrdiv{width:200px;height:5px;background-color:#1A1B22;}
+@media screen and (max-width:1100px){.tbe{text-align:center;padding:5px;}
+.tbd{padding:5px;}
+}
+.serv_card{width:300px;transition:all ease 1s;}.hrdivo{width:200px;height:5px;background-color:#1abc9c;}.bolinhas{width:130px;}
+.serv_card:hover{background-color:rgba(249,245,246,1.00);border-radius:20px;}

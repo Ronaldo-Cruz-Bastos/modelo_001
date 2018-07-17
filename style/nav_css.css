@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* logo da nav bar*/
+.logo{
+	
+	float: left;
+	display: block;
+	margin-left: -80px;
+	margin-right: 10px;
+	margin-top: 25px;
+
+	height:60px; 
+	
+	transition: all ease .5s;	
+}
+
+.logo2{
+	
+
+	display: block;
+	margin-left: 30px;
+	margin-right: 10px;
+	margin-top: 0px;
+
+	height:60px; 
+	
+	transition: all ease .5s;	
+}
+
+/* navbar*/
+	nav#navdown{
+	
+	margin-top: 0px;
+	height: 100px;
+	
+	visibility: visible;
+	
+	
+	transition: all ease .5s;	
+	
+} 
+
+div#bs-example-navbar-collapse-1{
+	
+	transition: all ease .5s;
+	
+	
+	
+}
+
+
+#dropdown1{
+	min-width: 400px;
+	width: 70%;
+	display: flex;
+	
+	justify-content: flex-end;
+	position: absolute;
+	left: 25%;	
+		transition: all ease .5s;	
+}
+/*links da nav*/
+ul a{
+		
+	margin-top: 25px;
+		
+		font-size: 15px;
+		font-weight: bold;
+	font-family: 'Maven Pro', sans-serif;
+	transition: all ease .5s;	
+	}	
+	
+	
+	
+
+/*formulario  caso haja          mude o nome caso tenha formularios em sua pagina*/
+
+ div#typtex{
+	
+	width: 150px;
+	
+}
+
+div#typpass{
+	
+	width: 150px;
+	
+} div#sidebar{
+	display: flex;
+	align-items: center;
+	 flex-direction: column;
+     justify-content: center;
+	position: fixed;
+	background-color: #000543;
+	width: 100%;
+	height: 100%;
+	
+	margin-top: -300%;
+
+		visibility: hidden;
+	transition: all ease .5s;
+		
+}
+
+#abrir{
+	
+	
+	
+	
+	visibility: hidden;
+	
+	
+	
+}  #barrasup{
+	
+	width: 100%;
+	
+	height: 60px;
+	
+	background-color:#000543;
+	
+	z-index: 2900;
+	
+	position: fixed;
+	
+	visibility: hidden;
+	
+}
+
+
+/*    configurações maximas  mobile */
+
+@media screen and (max-width: 1100px){
+	
+	
+	#barrasup{
+		
+		
+		visibility: visible;
+	}
+	
+	#abrir{
+	
+	
+	
+	
+	visibility: visible;
+	
+	
+	
+}
+
+	
+	
+	nav#navdown{
+		
+		
+		visibility: hidden;
+	}
+	
+	div#sidebar{
+	
+	
+
+		visibility: visible;
+	
+		
+}
+	
+}

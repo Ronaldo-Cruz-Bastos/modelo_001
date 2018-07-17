@@ -1,0 +1,89 @@
+    <footer id="sec_cont" class="page-footer" style="background-color: #222; margin-top: 0px;">
+        <div class="container" style="width: 100%;">
+            <div class="row">
+
+                <div class="col l3 s12">
+                    <h5 >Contato</h5>
+                    <ul>
+                        <li><i class="fa fa-phone"></i> {TELEFONE}</li>
+                        <br>
+                        <li><i class="fa fa-whatsapp"></i> {CELULAR}</li>
+                        <br>
+                        <li><i class="fa fa-envelope"></i> {EMAIL}</li>
+                    </ul>
+                </div>
+                <div class="col l6 s12">
+                    <h5 >Localização</h5>
+
+                    <ul>
+                        <p><i class="fa fa-map-pin"></i> {CFG_LOCAL}</p>
+                        <center>
+                            <li>
+                                <a id="map-container-link" href="{CFG_COORDENADAS}" target="_blank" itemprop="hasMap" data-tracking-element-type="7">
+                                <iframe src="{SRC_MAPS}" width="90%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </a>
+
+                            </li>
+                        </center>
+
+                    </ul>
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 >Fale Conosco</h5>
+                    <form method="POST" action="/" accept-charset="UTF-8">
+
+                        <div class="form-group">
+                            <label class="coo" for="usr">Nome Completo:</label>
+                            <input type="text" class="form-control" name="nome" id="usr" placeholder="Insira Seu Nome">
+                        </div>
+                        <div class="form-group">
+                            <label class="coo" for="pwd">E-mail:</label>
+                            <input type="email" class="form-control" name="email" id="pwd" placeholder="Insira Seu Melhor E-mail">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="coo" for="pwd">Mensagem</label>
+                            <textarea class="form-control" name="msg" id="pwds"> </textarea>
+                        </div>
+                        <center>
+                            <input type="submit" class="btn btn-default">
+                        </center>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright valign-wrapper">
+            <div class="row container valign-wrapper" style="margin-bottom: 0px;">
+                <div class="col l3 m3 s12">
+                    <div onclick="window.location.assign('/login')" style="cursor: pointer;">
+	      	        	<span class="fa-stack fa-lg">
+	      	        	    <i class="fa fa-square-o fa-stack-2x"></i>
+	      	        	    <i class="fa fa-lock  fa-stack-1x"></i>
+	      	        	</span>Acesso 
+	      	        </div>
+                </div>   
+                <div class="col l3 m3 s12">                
+                    <a class="brown-text text-lighten-3" href="http://m3rsistemas.com.br"> By: M3R Sistemas</a>
+                </div>   
+                <div class="col l3 m3 s12">                     
+                    <a class="scroll" href="#home">Voltar para o Topo</a>
+                </div>   
+                                
+            </div>
+        </div>
+    </footer>
+<a onclick="downloadInnerHtml('index.html', 'main','text/html');">Download Html</a>
+    <script>
+        function downloadInnerHtml(filename, elId, mimeType) {
+            alert("oi");
+            var elHtml = document.getElementById(elId).innerHTML;
+            var link = document.createElement('a');
+            mimeType = mimeType || 'text/plain';
+        
+            link.setAttribute('download', filename);
+            link.setAttribute('href', 'data:' + mimeType + ';charset=utf-8,' + encodeURIComponent(elHtml));
+            link.click(); 
+        }
+    </script>      
